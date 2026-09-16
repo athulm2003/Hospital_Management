@@ -55,7 +55,7 @@ class HsptlManager(dbconnect):
             query="select * from patient"
             self.cursor.execute(query)
             records=self.cursor.fetchall()
-            print( records)
+            return records
         except Exception as e:
             print(e)
 
